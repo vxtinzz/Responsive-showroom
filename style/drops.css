@@ -6,6 +6,13 @@
     --verde:#222315;
     --branco:#ffffff;
     --branco-hover:#bbbbbb;
+    --cinza-claro:#F7F7F7;
+    --black-skull:#0E0B13;
+    --creme:#EEE8D6;
+    --gothic-green:#002504;
+    --amarelo:#E7D03C;
+    --marrom:#5e392f;
+    --azul:#1C2340;
     --scale:1;
 }
 
@@ -21,7 +28,6 @@
 
 body{
     margin: 0;
-    background-size: cover;
 }
 
 
@@ -30,4 +36,201 @@ main{
     align-items: center;
     justify-content: center;
     flex: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.product-grid{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 520px;
+    width: 420px;
+    margin-right: 20px;
+    color: var(--laranja);
+    background-color: var(--cinza-claro);
+    border-radius: 10px;
+    transition: linear 70ms;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.product-image{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.product-card img{
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 100%;    
+    height: 100%;
+    transform: scale(1.3);
+    object-fit: cover;
+}
+
+.back-img{
+    opacity: 0;
+}
+
+.product-card:hover .back-img{
+    opacity: 1;
+}
+
+.product-name{
+    width: 60%;
+    margin: 40px auto 3px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.product-price{
+    width: 20%;
+    margin: 5px auto;
+    font-weight: 500;
+}
+.colors{
+    margin: 10px auto;
+    width: 10%;
+}
+.product-color{
+    display: inline-block;
+    border: 1px solid var(--branco-hover);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 2px var(--branco);
+}
+
+#oversized-skull{
+    background-color: var(--black-skull);
+}
+
+#oversized-purple{
+    background-color: var(--creme);
+}
+
+#oversized-gothic{
+    background-color: var(--gothic-green);
+}
+
+.product-card .product-image .gothic{
+    object-fit: contain;
+    transform: scale(1.25);
+}
+
+.product-card .product-image .bone-five{
+    transform: scale(0.9);
+}
+
+.product-card:hover .bone-five{
+    opacity: 0;
+}
+
+.product-card .product-image .bone-five-costas{
+    transform: scale(0.9);
+}
+
+.product-card:hover .bone-five-costas{
+    opacity: 1;
+}
+
+#bone-five{
+    background-color: var(--black-skull);
+}
+
+#brasil-legacy{
+    background-color: var(--amarelo);
+}
+
+.product-card .product-image .brasil-legacy{
+    object-fit: contain;
+    transform: scale(1.25);
+}
+
+.product-card .product-image .brasil-legacy-costas{
+    object-fit: contain;
+    transform: scale(1.25);
+}
+
+.product-card .brasil-legacy-costas{
+    opacity: 0;
+}
+
+.product-card:hover .brasil-legacy{
+    opacity: 0;
+}
+
+.product-card:hover .brasil-legacy-costas{
+    opacity: 1;
+}
+
+#gothic-puff{
+    background-color: var(--marrom);
+}
+
+.product-card .product-image .gothic-puff{
+    object-fit: contain;
+    transform: scale(1.3);
+}
+
+.product-card .product-image .gothic-puff-costas{
+    object-fit: contain;
+    transform: scale(1.3);
+}
+
+.product-card .gothic-puff-costas{
+    opacity: 0;
+}
+
+.product-card:hover .gothic-puff{
+    opacity: 0;
+}
+
+.product-card:hover .gothic-puff-costas{
+    opacity: 1;
+}
+
+
+#gothic-puff{
+    background-color: var(--marrom);
+}
+
+.product-card .product-image .beach-short{
+    object-fit: contain;
+    transform: scale(1.3);
+}
+
+#beach-short{
+    background-color: var(--black-skull);
+}
+
+.product-card .product-image .explorer-short, .product-card .product-image .explorer-short-costas{
+    object-fit: contain;
+    transform: scale(1.3);
+}
+
+#explorer-short{
+    background-color: var(--azul);
+}
+
+.product-card .explorer-short-costas{
+    opacity: 0;
+}
+
+.product-card:hover .explorer-short{
+    opacity: 0;
+}
+
+.product-card:hover .explorer-costas{
+    opacity: 1;
 }
