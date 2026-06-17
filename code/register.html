@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outz - Cadastro</title>
+    <link rel="stylesheet" href="../style/assets.css">
+    <link rel="stylesheet" href="../style/register.css">
+</head>
+<body>
+    <header class="navbar">
+        <img class="logo" src="../images/logo-home.svg" alt="logo-menu">
+        <ul class="pages">
+            <li><a href="">HOME</a></li>
+            <li><a href="../code/drops.html">DROPS</a></li>
+            <li><a href="">ORIGEM</a></li>
+            <li><a href="../code/contact.html">CONTATO</a></li>
+            <li><a href="">NEWS</a></li>
+            <li><a href="">DOCS</a></li>
+        </ul>
+        <a href="register.html" class="register-button">
+            <img id="register-icon" src="../images/register-icon.svg" alt="register-icon">
+        </a>
+    </header>
+
+    <main class="content">
+        <form class="contact-form" action="https://formsubmit.co/outzcrew.atendimento@gmail.com" method="POST">
+            <h1>CADASTRO</h1>
+            <div class="personal-data">
+            <div class="item">
+            <label for="name">Nome:</label>
+            <input type="text" class="text-input" name="name" placeholder="Digite seu nome completo" required>
+            </div>
+            <div class="line-1">
+            <div class="half-item">
+            <label for="cpf">CPF:</label>
+            <input type="text" class="text-input" name="cpf" placeholder="111.111.111-11" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+            </div>
+            <div class="half-item">
+            <label for="date">Data de Nascimento:</label>
+            <input type="date" class="text-input" name="date" placeholder="dd/mm/aaaa" required>
+            </div>
+            </div>
+            <div class="line-2">
+            <div class="half-item">
+            <label for="tel">TELEFONE:</label>
+            <input type="tel" class="text-input" name="tel" placeholder="(11) 11111-1111" pattern="\(\d{2}\)\s\d{5}-\d{4}" required>
+            </div>
+            <div class="half-item">
+            <label for="email">Email:</label>
+            <input type="text" class="text-input" name="email" placeholder="example@email.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$" required>
+            </div>
+            </div>
+            <div class="line-3">
+            <div class="half-item">
+            <label for="EC">Estado Civil:</label>
+            <select class="select" name="EC">
+                <option></option>
+                <option>SOLTEIRO</option>
+                <option>CASADO</option>
+                <option>DIVORCIADO</option>
+                <option>SEPARADO JUDICIALMENTE</option>
+            </select>
+            </div>
+            <div class="half-item">
+            <label for="carrer">Profissão:</label>
+            <input type="text" class="text-input" name="carrer" placeholder="Digite sua profissão">
+            </div>
+            </div>
+            <div class="radio-group">
+            <p>Sexo:</p>
+            <input type="radio" id="Masculino" name="sex" value="Masculino">
+            <label for="Male-sex">Masculino</label><br>
+            <input type="radio" id="Feminino" name="sex" value="Feminino">
+            <label for="Femenine-sex">Feminino</label><br>
+            </div>
+            </div>
+
+            <div class="address-data">
+            <div class="line-4">
+            <div class="half-item">
+            <label for="street">Rua:</label>
+            <input type="text" class="text-input" name="street" placeholder="Rua João da Silva N° 1">
+            </div>
+            <div class="half-item">
+            <label for="cep">CEP:</label>
+            <input type="text" class="text-input" name="cep" placeholder="00000-000">
+            </div>
+            </div>
+            <div class="line-5">
+            <div class="half-item">
+            <label for="city">CIDADE:</label>
+            <input type="text" class="text-input" name="city" placeholder="Digite o nome da sua cidade">
+            </div>
+            <div class="half-item">
+            <label for="UF">UF:</label>
+            <select class="select" name="EC">
+                <option></option>
+                <option value="Acre">AC</option>
+                <option value="Alagoas">AL</option>
+                <option value="Amapá">AP</option>
+                <option value="Amazonas">AM</option>
+                <option value="Bahia">BA</option>
+                <option value="Ceará">CE</option>
+                <option value="Distrito Federal">DF</option>
+                <option value="Espírito Santo">ES</option>
+                <option value="Goiás">GO</option>
+                <option value="Maranhão">MA</option>
+                <option value="Mato Grosso">MT</option>
+                <option value="Mato Grosso do Sul">MS</option>
+                <option value="Minas Gerais">MG</option>
+                <option value="Pará">PA</option>
+                <option value="Paraíba">PB</option>
+                <option value="Paraná">PR</option>
+                <option value="Pernambuco">PE</option>
+                <option value="Piauí">PI</option>
+                <option value="Rio de Janeiro">RJ</option>
+                <option value="Rio Grande do Norte">RN</option>
+                <option value="Rio Grande do Sul">RS</option>
+                <option value="Rondônia">RO</option>
+                <option value="Roraima">RR</option>
+                <option value="Santa Catarina">SC</option>
+                <option value="São Paulo">SP</option>
+                <option value="Sergipe">SE</option>
+                <option value="Tocantins">TO</option>
+            </select>
+            </div>
+            </div>
+            <div class="item">
+            <label for="obs">OBS:</label>
+            <textarea type="textarea" class="textarea" name="obs" placeholder="Observações"></textarea>
+                </div>
+            </div>
+            <div class="form-button">
+            <button type="submit" class="submit-button">
+                Cadastrar
+            </button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+       <img class="logo-footer" src="../images/logo-home.svg" alt="logo-footer">
+       <div class="newsletter">
+            <h3>FAÇA PARTE DA NOSSA <span class="contrast">FAMÍLIA</span></h3>
+            <p>Inscreva-se para ter acesso exclusivo à venda antecipada, novidades e promoções</p>
+            <button class="footer-button">
+                <span class="subscribe">Inscrever-se</span>
+                <img src="../images/arrow.svg" alt="arrow photo">
+            </button>
+       </div>
+       <div class="departaments">
+        <h3 class="contrast">DEPARTAMENTOS</h3>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">DROPS</a></li>
+            <li><a href="../code/contact.html">CONTATO</a></li>
+            <li><a href="">DOCS</a></li>
+            <li><a href="">NEWS</a></li>
+        </ul>
+       </div>
+       <div class="contact-us">
+            <h3 class="contrast">FALE CONOSCO</h3>
+            <p>outzcrew.atendimento@gmail.com</p>
+            <p>Tel: (28) 99911-2233</p>
+            <button class="footer-button">
+                <span>Whatsapp</span>
+                <img src="../images/whatsapp-icon.svg" alt="whatsapp photo">
+            </button>
+            <button class="footer-button">
+                <span>outz.lab</span>
+                <img src="../images/instagram-icon.svg" alt="instagram photo">
+            </button>
+       </div>
+       <div class="payment-methods">
+            <h3 class="contrast">FORMAS DE PAGAMENTO</h3>
+            <img src="../images/pay-cards1.svg" alt="pay-cards1">
+            <img src="../images/pay-cards2.svg" alt="pay-cards2">
+            <img src="../images/pay-cards3.svg" alt="pay-cards3">
+        </div>
+       </div>
+       <hr>
+       <div class="footer-bottom contrast">
+        <p>
+            ©2026 Outz. Todos os direitos reservados. Outz Crew INDUSTRIES LTDA CNPJ: 29.111.111/0001-51 - Rua Padre Anchieta, Alegre
+        </p>
+        <p>
+           &nbsp; Developed by Victor Hugo, João Pedro and Wynicius
+        </p>
+       </div>
+    </footer>
+</body>
+</html>
