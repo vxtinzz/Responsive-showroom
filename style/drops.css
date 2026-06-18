@@ -6,7 +6,7 @@
     --verde:#222315;
     --branco:#ffffff;
     --branco-hover:#bbbbbb;
-    --cinza-claro:#F7F7F7;
+    --cinza-claro:#f3f3f3;
     --black-skull:#0E0B13;
     --creme:#EEE8D6;
     --gothic-green:#002504;
@@ -240,6 +240,7 @@ main{
     display: flex;
     margin: 100px auto 50px;
     align-items: center;
+    justify-content: center;
     width: 95%;
 }
 
@@ -299,4 +300,79 @@ main{
 
 .voucher-tips{
     width: 400px;
+}
+
+.reviews{
+    color: var(--laranja);
+    text-align: center;
+}
+
+
+.review-infos{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    gap: 8px;
+}
+
+.review-arrow{
+    background-color: var(--branco);
+    border: none;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.review-arrow:hover{
+    transform: scale(1.1);
+}
+.review-arrow img{
+    height: 12px;
+}
+
+#arrow-review-right{
+    transform: rotate(180deg);
+}
+
+#review-title{
+    font-weight: 600;
+}
+
+.review-card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 320px;
+    height: 100px;
+    box-shadow: 1px 3px 11px 0 rgba(0, 0, 0, 0.25);
+    padding: 0px 20px 50px 20px;
+    border-radius: 10px;
+    text-align: justify;
+    transition: 0.3s;
+    background-color: var(--branco);
+}
+
+.review-card:hover{
+    transform: scale(1.1);
+}
+
+.review-date{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.review-name{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 15px 0 0;
+}
+
+.review-stars{
+    margin-right: 70px;
+}
+
+.review-desc{
+    font-weight: 500;
+    font-size: 12px;
+    width: 90%;
+    margin-top: -10px;
 }
