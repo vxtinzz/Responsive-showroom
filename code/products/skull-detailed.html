@@ -24,7 +24,7 @@
 
     <main>
         <section class="main-content">
-            <input type="radio" id="default-img" name="mini-product-image">
+            <input type="radio" id="default-img" name="mini-product-image" checked>
             <input type="radio" id="back-img" name="mini-product-image">
             <div class="column-1">
                     <div class="mini-product-image">
@@ -55,17 +55,24 @@
                 </div>
                 <div class="product-size">
                     <p>Tamanho:</p>
-                    <div class="size-options">    
-                        <span>P</span>
-                        <span>M</span>
-                        <span>G</span>
-                        <span>GG</span>
-                        <span>XG</span>
+                    <div class="size-options">
+                        <input type="radio" id="P-size" name="size-options">
+                        <label for="P-size"><span>P</span></label>
+                        <input type="radio" id="M-size" name="size-options">    
+                        <label for="M-size"><span>M</span></label>
+                        <input type="radio" id="G-size" name="size-options">
+                        <label for="G-size"><span>G</span></label>
+                        <input type="radio" id="GG-size" name="size-options">   
+                        <label for="GG-size"><span>GG</span></label>
+                        <input type="radio" id="XG-size" name="size-options">
+                        <label for="XG-size"><span>XG</span></label>         
                     </div>
                 </div>
                 <hr>
                 <div>
-                    <a class="request-button" href="https://wa.me/5528999112233?text=Gostaria%20de%20solicitar%20uma%20peça%20que%20vi%20no%20site">Solicitar Peça</a>
+                    <a class="request-button" href="https://wa.me/5528999112233?text=Gostaria%20de%20solicitar%20uma%20peça%20que%20vi%20no%20site">Solicitar Peça
+                        <img src="../../images/whatsapp-icon.svg" alt="whatsapp photo">
+                    </a>
                 </div>
                 <hr>
                 <div class="product-infos">
