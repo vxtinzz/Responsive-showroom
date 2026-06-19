@@ -13,13 +13,6 @@
     --amarelo:#E7D03C;
     --marrom:#5e392f;
     --azul:#1C2340;
-    --scale:1;
-}
-
-::placeholder{
-    font-family: 'Montserrat', sans-serif;
-    color: var(--branco-hover);
-    font-weight: 500;
 }
 
 .navbar{
