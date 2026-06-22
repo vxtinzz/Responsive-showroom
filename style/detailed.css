@@ -58,6 +58,11 @@ main{
     border: 2px solid var(--laranja);
 }
 
+.gothic-detailed {
+    transform: scale(0.75);
+    transition: transform .3s;
+}
+
 #default-img:checked ~ .column-2 .default-img{
     opacity: 1;
     transform:translateX(0);
