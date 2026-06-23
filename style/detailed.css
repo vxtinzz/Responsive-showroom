@@ -68,6 +68,11 @@ main{
     transition: transform .3s;
 }
 
+.brasil-detailed {
+    transform: scale(0.75);
+    transition: transform .3s;
+}
+
 #default-img:checked ~ .column-2 .default-img{
     opacity: 1;
     transform:translateX(0);
