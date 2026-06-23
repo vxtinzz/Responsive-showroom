@@ -58,6 +58,12 @@ main{
     border: 2px solid var(--laranja);
 }
 
+.skull-detailed {
+    transform: scale(1.08);
+    transition: transform .3s;
+    margin-top: -65px;
+}
+
 .purple-detailed {
     transform: scale(1.08);
     transition: transform .3s;
