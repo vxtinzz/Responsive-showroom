@@ -30,6 +30,11 @@ main{
     font-family: 'Montserrat', sans-serif;
 }
 
+.top-main-content {
+    display: flex;
+    flex-direction: column;
+}
+
 .main-content{
     display: grid;
     grid-template-columns: 1fr 5fr 2fr;
