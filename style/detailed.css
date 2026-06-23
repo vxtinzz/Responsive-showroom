@@ -58,6 +58,12 @@ main{
     border: 2px solid var(--laranja);
 }
 
+.purple-detailed {
+    transform: scale(1.08);
+    transition: transform .3s;
+    margin-top: -60px;
+}
+
 .gothic-detailed {
     transform: scale(0.75);
     transition: transform .3s;
@@ -71,6 +77,7 @@ main{
 .brasil-detailed {
     transform: scale(0.75);
     transition: transform .3s;
+    margin-top: 15px;
 }
 
 #default-img:checked ~ .column-2 .default-img{
