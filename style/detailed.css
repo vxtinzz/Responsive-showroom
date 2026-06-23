@@ -355,6 +355,10 @@ hr{
     background-color: var(--gothic-green);
 }
 
+#gothic-puff {
+    background-color: var(--marrom);
+}
+
 .product-card .product-image .gothic{
     object-fit: contain;
     transform: scale(1.25);
