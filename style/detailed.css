@@ -365,6 +365,11 @@ hr{
     background-color: var(--marrom);
 }
 
+#explorer-short {
+    background-color: var(--azul);
+}
+
+
 .product-card .product-image .gothic{
     object-fit: contain;
     transform: scale(1.25);
