@@ -63,6 +63,11 @@ main{
     transition: transform .3s;
 }
 
+.bone-detailed {
+    transform: scale(0.7);
+    transition: transform .3s;
+}
+
 #default-img:checked ~ .column-2 .default-img{
     opacity: 1;
     transform:translateX(0);
