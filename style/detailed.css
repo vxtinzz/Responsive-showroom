@@ -86,6 +86,12 @@ main{
     margin-top: 15px;
 }
 
+.beach-detailed {
+    transform: scale(0.75);
+    transition: transform .3s;
+    margin-top: -60px;
+}
+
 #default-img:checked ~ .column-2 .default-img{
     opacity: 1;
     transform:translateX(0);
