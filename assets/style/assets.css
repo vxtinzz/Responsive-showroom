@@ -6,7 +6,6 @@
     --verde:#222315;
     --branco:#ffffff;
     --branco-hover:#bbbbbb;
-    --scale:1;
 }
 
 body{
@@ -16,10 +15,14 @@ body{
     min-height: 100vh;
 }
 
+main{
+    flex: 1;
+}
+
 /* MENU NAVBAR */
 .navbar{
     font-family: 'Montserrat', sans-serif;
-    height: calc(100px * var(--scale));
+    height: 100px;
     width: 100%;
     background-color: var(--verde);
     display: flex;
@@ -31,12 +34,12 @@ body{
     background: none;
     border: none;
     display: flex;
-    height: calc(40px * var(--scale));
-    width: calc(40px * var(--scale));
+    height: 40px;
+    width: 40px;
     margin-right: 3vw;
     justify-content: center;
     align-items: center;
-    border-radius: calc(2px * var(--scale));
+    border-radius: 2px;
 }
 
 .register-button:hover{
@@ -48,14 +51,14 @@ body{
 }
 
 #register-icon{
-    height: calc(40px * var(--scale));
-    width: calc(40px * var(--scale));
+    height: 40px;
+    width: 40px;
 }
 
 .logo{
     display: inline-block;
-    height: calc(120px * var(--scale));
-    width: calc(215px * var(--scale));
+    height: 120px;
+    width: 215px;
     margin-left: 2vw;
 }
 
@@ -70,35 +73,34 @@ body{
     position: relative;
     color: var(--laranja);
     text-decoration: none;
-    font-size: calc(22px * var(--scale));
-    padding: calc(22px * var(--scale)) calc(29px * var(--scale));
+    font-size: 22px;
+    padding: 20px 30px;
     font-weight:600;
 }
 
 .pages a::after{
     content:"";
     position:absolute;
-    left:calc(29px * var(--scale));
-    bottom:calc(16px * var(--scale));
+    left: 29px;;
+    bottom: 16px;
     width:0%;
-    height:calc(4px * var(--scale));
+    height: 4px;
     background:var(--laranja);
-    transition: width 1s ease;
+    transition: width 0.3s ease;
 }
 
 .pages a:hover::after{
-    width:calc(100% - (58px * var(--scale)));
+    width:calc(100% - 58px);
 }
 
 #active::after{
-    width:calc(100% - (58px * var(--scale)));
+    width:calc(100% - 58px );
 }
 
 /* FOOTER */
 
 footer{
     width: 100%;
-    height: calc(365px * var(--scale));
     position: relative;
     bottom: 0;
     background-color: var(--verde);
@@ -111,18 +113,18 @@ footer{
 }
 
 .logo-footer{
-    width: calc(200px * var(--scale));;
+    width: 200px;
 }
 
 .footer-top{
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin-top: calc(60px * var(--scale));
+    margin-top: 60px;
 }
 
 .newsletter{
-    width: calc(325px * var(--scale));
+    width: 325px;
 }
 
 .contrast{
@@ -134,7 +136,7 @@ footer{
     font-weight: 300;
     margin: -5px 0 15px 0;
     color: var(--branco);
-    font-size: calc(11px * var(--scale));
+    font-size: 11px;
 }
 
 .newsletter h3{
@@ -147,7 +149,7 @@ footer{
     background-color: var(--laranja);
     border-radius: 4px;
     color: var(--branco);
-    height: calc(10px * var(--scale));
+    height: 10px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -169,7 +171,7 @@ footer{
 .footer-button span{
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
-    font-size: calc(11px * var(--scale));
+    font-size: 11px;
 }
 
 .departaments h3{
@@ -180,7 +182,7 @@ footer{
     list-style: none;
     margin-left: -40px;
     margin-bottom: 10px;
-    font-size:calc(13px * var(--scale));
+    font-size:  13px;
     font-weight: 600;
 }
 
@@ -194,7 +196,7 @@ footer{
 }
 
 .contact-us{
-    width: calc(300px * var(--scale));
+    width: 300px;
 }
 
 .contact-us h3{
@@ -205,21 +207,21 @@ footer{
     font-weight: 300;
     margin: -5px 0 15px 0;
     color: var(--branco);
-    font-size: calc(11px * var(--scale));
+    font-size: 11px;
 }
 
 .contact-us button{
-    margin-bottom: calc(10px * var(--scale));
+    margin-bottom: 10px;
 }
 
 .payment-methods{
-     width: calc(260px * var(--scale));
+     width: 260px;
 }
 
 footer hr{
     width: 80%;
     border: 1px solid var(--laranja);
-    margin-top: calc(20px * var(--scale));
+    margin-top: 20px;
 }
 
 .footer-bottom{
