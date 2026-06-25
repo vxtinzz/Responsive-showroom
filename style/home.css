@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: "Akira";
+    src: url("../assets/fonts/AkiraExpandedDemo.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --laranja:#FF6B2D;
+    --laranja-hover:#e4591d;
+    --verde:#222315;
+    --branco:#ffffff;
+    --branco-hover:#bbbbbb;
+    --cinza-claro:#f3f3f3;
+    --cinza-escuro:#181818;
+    --black-skull:#0E0B13;
+    --creme:#EEE8D6;
+    --gothic-green:#002504;
+    --amarelo:#E7D03C;
+    --marrom:#5e392f;
+    --azul:#1C2340;
+    --transparente:rgba(0,0,0,0);
+}
+
+.navbar{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: inset 150px 57px 35px 12px;
+    z-index: 1000;
+}
+
+body{
+    margin: 0;
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#background{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.title{
+    color: var(--branco);
+    font-family: 'Akira';
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title span{
+    color: var(--laranja);
+}
+
+.sub-title p{
+    color: var(--branco);
+    margin: 0;
+}
+
+.main-top {
+    position: relative;
+    top: 0;
+}
+
+.main-text{
+    position: absolute;
+    left: 65px;
+    top: 250px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.main-text h1{
+    width: 60%;
+    font-size: 55px;
+    line-height: 50px;
+}
+
+.main-text *:not(.text-blur) {
+    position: relative;
+    z-index: 1;
+}
+
+.text-blur {
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    width: 350px;
+    height: 220px;
+    background: black;
+    box-shadow: 50px 0 100px;
+    filter: blur(50px);
+    z-index: 0;
+}
+
+.see-drops:hover img{
+    transform: translateX(8px) scale(1.1);
+    transition: transform 0.5s;
+}
+
+.see-drops{
+    display: flex;
+    color: var(--laranja);
+    text-decoration: none;
+    width: 35%;
+    z-index: 1;
+    margin-top: 50px;
+    margin-left: 80px;
+    transform: scale(1.5);
+}
+
+.see-drops p{
+    margin-right: 10px;
+    font-weight: 800;
+}
+
+.origin{
+    display: flex;
+    width: 85%;
+    margin: 70px auto;
+    color: var(--laranja);
+    align-items: center;
+}
+
+.text-origin{
+    width: 60%;
+    margin-right: 200px;
+}
+.origin h1{
+    font-family: 'Akira';
+    font-weight: 800;
+    margin: 5px 0;
+
+}
+
+.origin h2{
+    font-family: 'Akira';
+    font-weight: 800;
+    margin: 0;
+}
+
+.origin p{
+    font-weight: 600;
+    font-size: 17px;
+    text-align: justify;
+}
+
+#banner-balaclava{
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.reviews .review-arrow{
+    background-color: var(--transparente);
+    border: none;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.review-card-home{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 320px;
+    height: 100px;
+    box-shadow: 1px 3px 11px 0 rgba(0, 0, 0, 0.25);
+    padding: 0px 20px 50px 20px;
+    border-radius: 10px;
+    text-align: justify;
+    transition: 0.3s;
+    background-color: var(--cinza-escuro);
+}
+
+.review-card-home:hover{
+    transform: scale(1.1);
+}
+
+.reviews{
+    margin-bottom: 140px;
+}
+
