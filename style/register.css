@@ -113,8 +113,9 @@ main{
 }
 
 .text-input:focus{
-    border: 2px solid var(--laranja);
+    border: 1px solid var(--laranja);
     outline: none;
+    box-shadow: 0 0 5px 1px var(--laranja);
     caret-color: var(--laranja);
 }
 
@@ -186,7 +187,8 @@ main{
 }
 
 .textarea:focus{
-    border: 2px solid var(--laranja);
+    border: 1px solid var(--laranja);
+    box-shadow: 0 0 5px 1px var(--laranja);
     outline: none;
     caret-color: var(--laranja);
 }
