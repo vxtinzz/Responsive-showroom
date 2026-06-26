@@ -47,15 +47,19 @@ body{
 }
 
 #register-icon{
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
 }
 
 .logo{
     display: inline-block;
-    height: 120px;
-    width: 215px;
+    height: 100px;
     margin-left: 2vw;
+}
+
+.logo:hover{
+    transform: scale(1.05) translateX(5px);
+    transition: transform linear 0.1s;
 }
 
 .pages{
@@ -69,28 +73,28 @@ body{
     position: relative;
     color: var(--laranja);
     text-decoration: none;
-    font-size: 22px;
-    padding: 20px 30px;
+    font-size: 17px;
+    padding: 20px 20px;
     font-weight:600;
 }
 
 .pages a::after{
     content:"";
     position:absolute;
-    left: 29px;;
+    left: 20px;;
     bottom: 16px;
     width:0%;
-    height: 4px;
+    height: 3px;
     background:var(--laranja);
     transition: width 0.3s ease;
 }
 
 .pages a:hover::after{
-    width:calc(100% - 58px);
+    width:calc(100% - 40px);
 }
 
 #active::after{
-    width:calc(100% - 58px );
+    width:calc(100% - 40px);
 }
 
 /* FOOTER */
