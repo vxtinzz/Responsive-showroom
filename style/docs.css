@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --laranja:#FF6B2D;
+    --laranja-hover:#e4591d;
+    --laranja-claro:#ff996d;
+    --verde:#222315;
+    --branco:#ffffff;
+    --branco-hover:#bbbbbb;
+    --cinza-claro:#f3f3f3;
+    --cinza-escuro:#818181;
+    --verde-outz:#3C3D27;
+    --black-skull:#0E0B13;
+    --creme:#EEE8D6;
+    --gothic-green:#002504;
+    --amarelo:#E7D03C;
+    --marrom:#5e392f;
+    --azul:#1C2340;
+    --cinza-azulado:#212529;
+    --cinza-table:#373B3E;
+    --verde-card:#2C2D1C;
+}
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+body{
+    margin: 0;
+    background-color: var(--verde);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.title h1{
+    font-weight: 800;
+}
+
+.title p{
+    font-weight: 400;
+    margin: 0;
+    color: var(--laranja-claro);
+}
+
+.title h1{
+    margin: 0;
+    color: var(--laranja);
+}
+
+.line-1, .line-2, .line-3{
+    display: grid;
+    width: 90%;
+}
+
+.line-1 h1, .line-2 h1, .line-3 h1{
+    font-weight: 700;
+}
+
+.line-1, .line-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.half-item, .swot{
+    padding: 30px 40px 40px 40px;
+    margin: 10px;
+    border-radius: 4px;
+    color: var(--branco);
+    background-color: var(--verde-card);
+    text-align: left;
+}
+
+.half-item p{
+    color: var(--cinza-claro);
+}
+
+.half-item span{
+    color: var(--branco);
+}
+
+.glow{
+    font-weight: 800;
+}
+
+.table{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2px;
+    background-color: var(--cinza-table);
+    border: 2px solid var(--cinza-table);
+}
+
+.table p{
+    padding: 20px;
+    margin: 0;
+    background-color: var(--cinza-azulado); 
+}
+
+
+.back{
+    width: 12%;
+    margin-top: 65px;
+    margin-bottom: 70px;
+    text-decoration: none;
+    color: var(--laranja);
+    padding: 10px;
+    border: 1px solid var(--laranja);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.back:hover{
+    background-color: var(--laranja);
+    color: var(--branco);
+    transition: ease 0.4s;
+}
+
+.span-button{
+    margin-top: 15px;
+}
+.button{
+    padding: 8px;
+    font-size: 12px;
+    margin-right: 5px;
+    background-color: var(--laranja);
+    border-radius: 5px;
+    font-weight: 600;
+}
