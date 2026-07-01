@@ -8,6 +8,10 @@
     --branco-hover:#bbbbbb;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     margin: 0;
     display: flex;
@@ -18,7 +22,7 @@ body{
 /* MENU NAVBAR */
 .navbar{
     font-family: 'Montserrat', sans-serif;
-    height: 100px;
+    min-height: 90px;
     width: 100%;
     background-color: var(--verde);
     display: flex;
@@ -53,7 +57,7 @@ body{
 
 .logo{
     display: inline-block;
-    height: 100px;
+    height: 90px;
     margin-left: 2vw;
 }
 
@@ -97,6 +101,57 @@ body{
     width:calc(100% - 40px);
 }
 
+@media(max-width:767px){
+    .navbar{
+        flex-wrap: wrap;
+        min-height: auto;
+        padding: 10px 0;
+    }
+
+    .navbar > a:first-child{
+        order: 1;
+    }
+
+    .register-button{
+        order: 2;
+    }
+
+    .pages{
+        order: 3;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo{
+        height: 50px;
+        margin-left: 4vw;
+    }
+
+    #register-icon{
+        height: 25px;
+        width: 25px;
+    }
+
+    .pages a{
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .pages a::after{
+        left: 10px;
+        bottom: 4px;
+    }
+
+    .pages a:hover::after{
+        width:calc(100% - 20px);
+    }
+
+    #active::after{
+        width:calc(100% - 20px);
+    }
+}
+
 /* FOOTER */
 
 footer{
@@ -110,6 +165,7 @@ footer{
     justify-content: center; 
     align-items: center;
     margin-top: 80px;
+    padding-top: 50px;
 }
 
 .logo-footer{
@@ -117,10 +173,28 @@ footer{
 }
 
 .footer-top{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 60px;
+    width:90%;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    gap:100px;
+    margin: auto;
+}
+
+@media(max-width:767px){
+    .footer-top{
+        width:90%;
+        display:grid;
+        grid-template-columns:1fr;
+        gap:12px;
+    }
+
+    .logo-footer{
+        justify-self: center;
+    }
+
+    .footer-bottom p{
+        text-align: center;
+    }
 }
 
 .newsletter{
@@ -172,6 +246,10 @@ footer{
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     font-size: 11px;
+}
+
+.departaments{
+    width: 200px;
 }
 
 .departaments h3{
