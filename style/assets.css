@@ -101,7 +101,7 @@ body{
     width:calc(100% - 40px);
 }
 
-@media(max-width:767px){
+@media screen and (max-width:767px){
     .navbar{
         flex-wrap: wrap;
         min-height: auto;
@@ -180,7 +180,7 @@ footer{
     margin: auto;
 }
 
-@media(max-width:767px){
+@media screen and (max-width:767px){  
     .footer-top{
         width:90%;
         display:grid;

@@ -72,7 +72,7 @@ main{
     object-fit: cover;
 }
 
-@media(max-width:767px){
+@media screen and (max-width:767px){
     
     .product-grid{
         grid-template-columns: 1fr 1fr;
@@ -129,7 +129,6 @@ main{
 }
 
 .product-price{
-    width: 20%;
     margin: 5px auto;
     font-weight: 500;
 }
@@ -278,7 +277,7 @@ main{
     width: 95%;
 }
 
-@media (max-width:767px) {
+@media screen and (max-width:768px) {
     
     .tips{
         flex-wrap: wrap;
@@ -374,7 +373,7 @@ main{
     gap: 8px;
 }
 
-@media (max-width:767px) {
+@media screen and (max-width:767px) {
     .reviews{
         display: flex;
         flex-wrap: wrap;
