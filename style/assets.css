@@ -10,6 +10,7 @@
 
 html{
     scroll-behavior:smooth;
+    overflow-x: hidden;
 }
 
 body{
@@ -203,7 +204,8 @@ body{
     display: none;
 }
 
-@media screen and (max-width:576px){
+/* Mobile:768px */
+@media screen and (max-width:767px){
     .navbar{
         flex-wrap: nowrap;
         justify-content: space-between;
@@ -219,7 +221,7 @@ body{
 
     .register-button{
         order: 3;
-        margin-right: 0;
+        margin-right: 4vw;
     }
 
     .hamburger{
@@ -241,6 +243,7 @@ body{
         width: 100%;
         background-color: var(--laranja);
         border-radius: 2px;
+        transition: transform 0.3s;
     }
 
     .logo{
@@ -273,17 +276,15 @@ body{
     }
 
     .menu-toggle:checked ~ .hamburger #trait-3{
-        display: none;
+        transform: rotate(40deg) translateY(-1px) translateX(0px);
     }
 
     .menu-toggle:checked ~ .hamburger #trait-1{
         transform: rotate(40deg) translateY(2px) translateX(2px);
-        transition: transform 0.4s;
     }
 
     .menu-toggle:checked ~ .hamburger #trait-2{
         transform: rotate(-40deg) translateY(1px);
-        transition: transform 0.4s;
     }
     
     .menu-toggle:checked ~ .hamburger{
@@ -329,7 +330,7 @@ footer{
     margin: auto;
 }
 
-@media screen and (max-width:768px){
+@media(max-width:767px){
     .footer-top{
         width:90%;
         display:grid;
@@ -343,25 +344,6 @@ footer{
 
     .footer-bottom p{
         text-align: center;
-    }
-
-    .newsletter,
-    .departaments,
-    .contact-us,
-    .payment-methods{
-        width: 100%;
-        text-align: center;
-    }
-
-    .newsletter p,
-    .contact-us p{
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .departaments li{
-        margin-left: 0;
     }
 }
 
@@ -392,7 +374,6 @@ footer{
     border-radius: 4px;
     color: var(--branco);
     height: 10px;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -442,7 +423,7 @@ footer{
 }
 
 .contact-us{
-    width: 300px;
+    width: 325px;
 }
 
 .contact-us h3{

@@ -72,10 +72,50 @@ main{
     object-fit: cover;
 }
 
-@media screen and (max-width:767px){
+@media screen and (max-width:1023px){
     
     .product-grid{
         grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin: 30px 12px 0;
+    }
+
+    .product-card{
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        padding-bottom: 15px;
+    }
+
+    .product-image{
+        height: 150px;
+    }
+
+    .product-name{
+        width: 90%;
+        font-size: 10px;
+        margin: 15px auto 3px;
+    }
+
+    .product-price{
+        width: 60%;
+        font-size: 12px;
+    }
+
+    .colors{
+        width: 30%;
+    }
+
+    .product-color{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1366px){
+    
+    .product-grid{
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 12px;
         margin: 30px 12px 0;
     }
@@ -373,7 +413,7 @@ main{
     gap: 8px;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:1024px) {
     .reviews{
         display: flex;
         flex-wrap: wrap;
