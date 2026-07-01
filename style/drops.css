@@ -72,6 +72,47 @@ main{
     object-fit: cover;
 }
 
+@media(max-width:767px){
+    
+    .product-grid{
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin: 30px 12px 0;
+    }
+
+    .product-card{
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        padding-bottom: 15px;
+    }
+
+    .product-image{
+        height: 150px;
+    }
+
+    .product-name{
+        width: 90%;
+        font-size: 10px;
+        margin: 15px auto 3px;
+    }
+
+    .product-price{
+        width: 60%;
+        font-size: 12px;
+    }
+
+    .colors{
+        width: 30%;
+    }
+
+    .product-color{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
 .back-img{
     opacity: 0;
 }
@@ -237,6 +278,31 @@ main{
     width: 95%;
 }
 
+@media (max-width:767px) {
+    
+    .tips{
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 60px auto 40px;
+    }
+
+    .tips .divisor{
+        display: none;
+    }
+
+    .item{
+        width: 85%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .item.whatsapp-tips,
+    .item.voucher-tips{
+        width: 85%;
+        max-width: 320px;
+    }
+}
+
 .item{
     display: grid;
     width: 300px;
@@ -308,6 +374,36 @@ main{
     gap: 8px;
 }
 
+@media (max-width:767px) {
+    .reviews{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .reviews{
+        justify-content: center;
+    }
+
+    .review-arrow{
+        display: none;
+    }
+
+    .review-infos{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .review-card{
+        width: 85%;
+        max-width: 320px;
+        height: auto;
+        min-height: 100px;
+    }
+
+    .review-stars{
+        margin-right: 20px;
+    }
+}
 .review-arrow{
     background-color: var(--branco);
     border: none;
