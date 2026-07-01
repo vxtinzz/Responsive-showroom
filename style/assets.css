@@ -224,7 +224,6 @@ footer{
     border-radius: 4px;
     color: var(--branco);
     height: 10px;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -274,7 +273,7 @@ footer{
 }
 
 .contact-us{
-    width: 300px;
+    width: 325px;
 }
 
 .contact-us h3{
