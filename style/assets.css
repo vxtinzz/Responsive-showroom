@@ -352,6 +352,38 @@ footer{
     }
 }
 
+@media screen and (orientation:landscape) and (max-width:900px){
+    .footer-top{
+         width:90%;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:12px;
+    }
+
+    .payment-methods{
+        grid-column: 1/-1;
+        justify-self: center;
+    }
+
+    .logo-footer{
+        justify-self: left;
+    }
+
+    .footer-bottom p{
+        text-align: center;
+    }
+}
+
+@media screen and (orientation:landscape) and (min-width:901px){
+    .footer-top{
+         width:90%;
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        gap:50px;
+    }
+
+}
+
 .newsletter{
     width: 325px;
 }
