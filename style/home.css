@@ -29,10 +29,20 @@
     background-color: rgba(0, 0, 0, 0);
     box-shadow: inset 150px 57px 35px 12px;
     z-index: 1000;
+    padding: 0;
+}
+
+.hamburger{
+    margin-left: 20px;
 }
 
 body{
     margin: 0;
+}
+
+body,html{
+    overflow-x: hidden;
+    padding: 0;
 }
 
 
@@ -112,7 +122,7 @@ main{
     display: flex;
     color: var(--laranja);
     text-decoration: none;
-    width: 35%;
+    max-width: 50%;
     z-index: 1;
     margin-top: 50px;
     margin-left: 80px;
@@ -122,6 +132,200 @@ main{
 .see-drops p{
     margin-right: 10px;
     font-weight: 800;
+}
+
+@media screen and (max-width:575px){
+
+    .main-top{
+        min-height: 480px;
+    }
+
+    #background{
+        height: 480px;
+        object-fit: cover;
+    }
+
+    .main-text{
+        left: 20px;
+        top: 200px;
+        width: 90%;
+    }
+
+    .main-text h1{
+        width: 100%;
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+    .sub-title p{
+        font-size: 12px;
+    }
+
+    .text-blur{
+        width: 220px;
+        height: 140px;
+        top: 0;
+        left: -15px;
+    }
+
+    .see-drops{
+        width: 60%;
+        margin-top: 20px;
+        margin-left: 0;
+        transform: scale(1);
+    }
+
+    .see-drops p{
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:1366px){
+
+    .main-top{
+        min-height: 600px;
+    }
+
+    #background{
+        height: 600px;
+        object-fit: cover;
+    }
+
+    .main-text{
+        left: 40px;
+        top: 160px;
+        width: 80%;
+    }
+
+    .main-text h1{
+        width: 90%;
+        font-size: 38px;
+        line-height: 40px;
+    }
+
+    .text-blur{
+        width: 280px;
+        height: 180px;
+    }
+
+    .see-drops{
+        width: 45%;
+        margin-top: 30px;
+        margin-left: 25px;
+        transform: scale(1.2);
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1366px){
+
+    .main-text{
+        left: 50px;
+        top: 210px;
+        width: 65%;
+    }
+
+    .main-text h1{
+        width: 80%;
+        font-size: 46px;
+        line-height: 44px;
+    }
+
+    .text-blur{
+        width: 320px;
+        height: 200px;
+    }
+
+    .see-drops{
+        width: 40%;
+        margin-top: 40px;
+        margin-left: 60px;
+        transform: scale(1.35);
+    }
+}
+
+@media screen and (orientation:landscape) and (max-width:575px){
+
+    .main-top{
+        min-height: 300px;
+    }
+
+    #background{
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .main-text{
+        left: 20px;
+        top: 40px;
+        width: 60%;
+    }
+
+    .main-text h1{
+        width: 100%;
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .text-blur{
+        width: 180px;
+        height: 100px;
+        top: 0;
+        left: -10px;
+    }
+
+    .see-drops{
+        width: 45%;
+        margin-top: 10px;
+        margin-left: 20px;
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (orientation:landscape) and (min-width:576px) and (max-width:1023px){
+
+    .main-top{
+        min-height: 420px;
+    }
+
+    #background{
+        height: 420px;
+        object-fit: cover;
+    }
+
+    .main-text{
+        left: 30px;
+        top: 70px;
+        width: 55%;
+    }
+
+    .main-text h1{
+        width: 90%;
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .text-blur{
+        width: 240px;
+        height: 150px;
+    }
+
+    .see-drops{
+        width: 40%;
+        margin-top: 15px;
+        margin-left: 30px;
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (orientation:landscape) and (min-width:1024px) and (max-width:1366px){
+
+    .main-text{
+        top: 180px;
+    }
+
+    .see-drops{
+        margin-top: 30px;
+    }
 }
 
 .origin{
@@ -161,6 +365,155 @@ main{
     border-radius: 10px;
 }
 
+@media screen and (max-width:575px){
+
+    .origin{
+        flex-direction: column;
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .text-origin{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .origin h1{
+        font-size: 20px;
+    }
+
+    .origin h2{
+        font-size: 28px;
+    }
+
+    .origin p{
+        font-size: 12px;
+        text-align: left;
+    }
+
+    #banner-balaclava{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:1023px){
+
+    .origin{
+        flex-direction: column;
+        width: 90%;
+        margin: 60px auto;
+    }
+
+    .text-origin{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .origin h1{
+        font-size: 26px;
+    }
+
+    .origin h2{
+        font-size: 36px;
+    }
+
+    .origin p{
+        font-size: 14px;
+    }
+
+    #banner-balaclava{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1366px){
+
+    .origin{
+        width: 90%;
+        margin: 70px auto;
+    }
+
+    .text-origin{
+        width: 55%;
+        margin-right: 80px;
+    }
+
+    .origin p{
+        font-size: 15px;
+    }
+
+    #banner-balaclava{
+        width: 45%;
+    }
+}
+
+@media screen and (orientation:landscape) and (max-width:575px){
+
+    .origin{
+        flex-direction: row;
+        width: 95%;
+        margin: 20px auto;
+        align-items: flex-start;
+    }
+
+    .text-origin{
+        width: 55%;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .origin h1{
+        font-size: 16px;
+    }
+
+    .origin h2{
+        font-size: 22px;
+    }
+
+    .origin p{
+        font-size: 10px;
+    }
+
+    #banner-balaclava{
+        width: 40%;
+    }
+}
+
+@media screen and (orientation:landscape) and (min-width:576px) and (max-width:1023px){
+
+    .origin{
+        flex-direction: row;
+        width: 90%;
+        margin: 40px auto;
+        align-items: flex-start;
+    }
+
+    .text-origin{
+        width: 55%;
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
+
+    .origin h1{
+        font-size: 22px;
+    }
+
+    .origin h2{
+        font-size: 30px;
+    }
+
+    .origin p{
+        font-size: 12px;
+    }
+
+    #banner-balaclava{
+        width: 40%;
+    }
+}
+
 .reviews .review-arrow{
     background-color: var(--transparente);
     border: none;
@@ -189,4 +542,3 @@ main{
 .reviews{
     margin-bottom: 60px;
 }
-
