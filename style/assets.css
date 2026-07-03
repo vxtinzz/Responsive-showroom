@@ -374,7 +374,7 @@ footer{
     }
 }
 
-@media screen and (orientation:landscape) and (min-width:901px){
+@media screen and (orientation:landscape) and (min-width:901px) and (max-width:1625px){
     .footer-top{
          width:90%;
         display:grid;
