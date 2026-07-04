@@ -352,6 +352,36 @@ footer{
     }
 }
 
+@media screen and (min-width:767px) and (max-width:923px){
+    .footer-top{
+         width:90%;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:20px;
+    }
+
+}
+
+@media screen and (min-width:924px) and (max-width:1566px){
+    .footer-top{
+         width:90%;
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        gap:20px;
+    }
+
+}
+
+@media screen and (min-width:1567px) and (max-width:1820px){
+    .footer-top{
+         width:90%;
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        gap:20px;
+    }
+
+}
+
 @media screen and (orientation:landscape) and (max-width:900px){
     .footer-top{
          width:90%;
