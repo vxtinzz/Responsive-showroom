@@ -6,7 +6,6 @@
     --verde:#222315;
     --branco:#ffffff;
     --branco-hover:#bbbbbb;
-    --scale:1;
 }
 
 ::placeholder{
@@ -39,7 +38,7 @@ main{
     width: 75%;
     margin: auto;
     margin-top: 100px;
-    min-height: calc(720px * var(--scale));
+    min-height: 720px;
     background-color: var(--branco);
     border: 2px solid var(--branco-hover);
     font-family: 'Montserrat', sans-serif;
@@ -65,7 +64,7 @@ main{
 .submit-button{
     border: none;
     width: 60%;
-    height: calc(50px * var(--scale));
+    height: 50px;
     border-radius: 8px;
     background-color: var(--laranja);
     color: var(--branco);
@@ -91,7 +90,7 @@ main{
 }
 
 .text-input{
-    height: calc(20px * var(--scale));
+    height: 20px;
     border: 1px solid var(--branco-hover);
     border-radius: 10px;
     padding: 15px;
@@ -104,7 +103,7 @@ main{
 }
 
 .select{
-    height: calc(50px * var(--scale));
+    height: 50px;
     padding: 13px 15px;
     border: 1px solid var(--branco-hover);
     border-radius: 10px;
@@ -177,7 +176,7 @@ main{
 }
 
 .textarea{
-    height: calc(118px * var(--scale));
+    height: 118px;
     border: 1px solid var(--branco-hover);
     border-radius: 10px;
     padding: 20px;
