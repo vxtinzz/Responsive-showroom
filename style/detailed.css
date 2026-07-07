@@ -158,7 +158,6 @@ main{
     display: flex;
     gap: 17px;
     white-space: nowrap;
-    justify-content: center;
 }
 
 .original-price{
