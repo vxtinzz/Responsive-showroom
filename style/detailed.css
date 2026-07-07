@@ -510,7 +510,7 @@ hr{
     }
 
     .detailed-product-image{
-        height: 400px;
+        height: 450px;
     }
 
     .skull-detailed{
@@ -571,12 +571,34 @@ hr{
         grid-template-columns: 1fr;
     }
 
+    .column-2{
+        order: 1;
+    }
+
     .column-1{
-        display: none;
+        display: block;
+        order: 2;
+    }
+
+    .column-3{
+        order: 3;
+    }
+
+    .mini-product-image{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        margin: 0;
+    }
+
+    .mini-product-image img{
+        width: 80px;
     }
 
     .detailed-product-image{
-        height: 250px;
+        height: 200px;
+        margin-top: 10px;
     }
 
     .also-like-title{
@@ -591,4 +613,5 @@ hr{
     .product-card .product-image{
         height: 200px;
     }
+
 }
