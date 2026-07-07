@@ -418,3 +418,39 @@ hr{
 #bone-five{
     background-color: var(--black-skull);
 }
+
+@media screen and (max-width:575px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .main-content{
+        grid-template-columns: 1fr;
+    }
+
+    .product-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .column-1{
+        display: none;
+    }
+
+    .detailed-product-image{
+        height: 250px;
+    }
+
+    .also-like-title{
+        font-size: 15px;
+    }
+
+    .product-card{
+        width: 100%;
+        height: auto;
+    }
+
+    .product-card .product-image{
+        height: 200px;
+    }
+}
