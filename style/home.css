@@ -180,6 +180,44 @@ main{
     }
 }
 
+.origin{
+    display: flex;
+    width: 85%;
+    margin: 70px auto;
+    color: var(--laranja);
+    align-items: center;
+}
+
+.text-origin{
+    width: 60%;
+    margin-right: 200px;
+}
+.origin h1{
+    font-family: 'Akira';
+    font-weight: 800;
+    margin: 5px 0;
+
+}
+
+.origin h2{
+    font-family: 'Akira';
+    font-weight: 800;
+    margin: 0;
+}
+
+.origin p{
+    font-weight: 600;
+    font-size: 17px;
+    text-align: justify;
+}
+
+#banner-balaclava{
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
 @media screen and (min-width:576px) and (max-width:1366px){
 
     .main-top{
@@ -326,43 +364,6 @@ main{
     .see-drops{
         margin-top: 30px;
     }
-}
-
-.origin{
-    display: flex;
-    width: 85%;
-    margin: 70px auto;
-    color: var(--laranja);
-    align-items: center;
-}
-
-.text-origin{
-    width: 60%;
-    margin-right: 200px;
-}
-.origin h1{
-    font-family: 'Akira';
-    font-weight: 800;
-    margin: 5px 0;
-
-}
-
-.origin h2{
-    font-family: 'Akira';
-    font-weight: 800;
-    margin: 0;
-}
-
-.origin p{
-    font-weight: 600;
-    font-size: 17px;
-    text-align: justify;
-}
-
-#banner-balaclava{
-    width: 50%;
-    height: auto;
-    border-radius: 10px;
 }
 
 @media screen and (max-width:575px){
